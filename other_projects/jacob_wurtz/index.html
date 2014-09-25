@@ -8,7 +8,9 @@
             <meta  charset="UTF-8" />
             <!-- Latest compiled and minified CSS -->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-            <!--My Stylesheet-->
+          
+            <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+            <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
             <link rel="stylesheet" href="stlyes.css" type="text/css" />
             
         </head>
@@ -27,7 +29,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand " href="#">Jacob Wurtz Photography</a>
+                      <a class="navbar-brand " href="index.html">Jacob Wurtz Photography</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -73,523 +75,129 @@
                     </div>
                 </div>
 
+            <!-- Begin Image Gallery -->
 
-
-                <section> 
-
-                 <!-- BEGIN PHOTO ROW 1 -->
-
-                    <div class="container-fluid">
-                        <div class="row">
-
-                        <!--Begins photo with Modal -->                                
-                            <div class="col-md-2">
-                                <a data-toggle="modal" data-target="#myModal"> 
-                                     <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                </a>
+                <div id="blueimp-gallery" class="blueimp-gallery">
+                    <!-- The container for the modal slides -->
+                    <div class="slides"></div>
+                    <!-- Controls for the borderless lightbox -->
+                    <h3 class="title"></h3>
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <a class="close">×</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
+                    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+                    <div class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title"></h4>
+                                </div>
+                                <div class="modal-body next"></div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default pull-left prev">
+                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                        Previous
+                                    </button>
+                                    <button type="button" class="btn btn-primary next">
+                                        Next
+                                        <i class="glyphicon glyphicon-chevron-right"></i>
+                                    </button>
+                                </div>
                             </div>
-
-                            <div class="modal fade" id="myModal">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                    <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                  </div>
-                                </div><!-- /.modal-content -->
-                              </div><!-- /.modal-dialog -->
-                            </div><!-- /.modal -->
-                                 
-                        <!-- Ends photo with Modal -->                          
-                            
-
-
-                        <!--Begins photo with Modal -->                                
-                            <div class="col-md-2">
-                                <a data-toggle="modal" data-target="#myModal"> 
-                                     <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                </a>
-                            </div>
-
-                            <div class="modal fade" id="myModal">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                    <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                  </div>
-                                </div><!-- /.modal-content -->
-                              </div><!-- /.modal-dialog -->
-                            </div><!-- /.modal -->
-                                 
-                        <!-- Ends photo with Modal -->
-
-                        <!--Begins photo with Modal -->                                
-                            <div class="col-md-2">
-                                <a data-toggle="modal" data-target="#myModal"> 
-                                     <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                </a>
-                            </div>
-
-                            <div class="modal fade" id="myModal">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                    <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                  </div>
-                                </div><!-- /.modal-content -->
-                              </div><!-- /.modal-dialog -->
-                            </div><!-- /.modal -->
-                                 
-                        <!-- Ends photo with Modal -->
-
-                        <!--Begins photo with Modal -->                                
-                            <div class="col-md-2">
-                                <a data-toggle="modal" data-target="#myModal"> 
-                                     <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                </a>
-                            </div>
-
-                            <div class="modal fade" id="myModal">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                    <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                  </div>
-                                </div><!-- /.modal-content -->
-                              </div><!-- /.modal-dialog -->
-                            </div><!-- /.modal -->
-                                 
-                        <!-- Ends photo with Modal -->
-
-                        <!--Begins photo with Modal -->                                
-                            <div class="col-md-2">
-                                <a data-toggle="modal" data-target="#myModal"> 
-                                     <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                </a>
-                            </div>
-
-                            <div class="modal fade" id="myModal">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                    <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                  </div>
-                                </div><!-- /.modal-content -->
-                              </div><!-- /.modal-dialog -->
-                            </div><!-- /.modal -->
-                                 
-                        <!-- Ends photo with Modal -->   
-
-                        <!--Begins photo with Modal -->                                
-                            <div class="col-md-2">
-                                <a data-toggle="modal" data-target="#myModal"> 
-                                     <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                </a>
-                            </div>
-
-                            <div class="modal fade" id="myModal">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                    <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                  </div>
-                                </div><!-- /.modal-content -->
-                              </div><!-- /.modal-dialog -->
-                            </div><!-- /.modal -->
-                                 
-                        <!-- Ends photo with Modal -->                       
                         </div>
                     </div>
-
-                    <br>
-                    
-                    <!-- BEGIN PHOTO ROW 2 -->
-
-                        <div class="container-fluid">
-                            <div class="row">
-                            <!--Begins photo with Modal -->                                
-                                <div class="col-md-2">
-                                    <a data-toggle="modal" data-target="#myModal"> 
-                                         <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                    </a>
-                                </div>
-
-                                <div class="modal fade" id="myModal">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                      </div>
-                                      <div class="modal-body">
-                                        <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                      </div>
-                                    </div><!-- /.modal-content -->
-                                  </div><!-- /.modal-dialog -->
-                                </div><!-- /.modal -->
-                                     
-                            <!-- Ends photo with Modal -->
-
-                            <!--Begins photo with Modal -->                                
-                                <div class="col-md-2">
-                                    <a data-toggle="modal" data-target="#myModal"> 
-                                         <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                    </a>
-                                </div>
-
-                                <div class="modal fade" id="myModal">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                      </div>
-                                      <div class="modal-body">
-                                        <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                      </div>
-                                    </div><!-- /.modal-content -->
-                                  </div><!-- /.modal-dialog -->
-                                </div><!-- /.modal -->
-                                     
-                            <!-- Ends photo with Modal -->
-
-                            <!--Begins photo with Modal -->                                
-                                <div class="col-md-2">
-                                    <a data-toggle="modal" data-target="#myModal"> 
-                                         <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                    </a>
-                                </div>
-
-                                <div class="modal fade" id="myModal">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                      </div>
-                                      <div class="modal-body">
-                                        <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                      </div>
-                                    </div><!-- /.modal-content -->
-                                  </div><!-- /.modal-dialog -->
-                                </div><!-- /.modal -->
-                                     
-                            <!-- Ends photo with Modal -->
-
-                            <!--Begins photo with Modal -->                                
-                                <div class="col-md-2">
-                                    <a data-toggle="modal" data-target="#myModal"> 
-                                         <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                    </a>
-                                </div>
-
-                                <div class="modal fade" id="myModal">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                      </div>
-                                      <div class="modal-body">
-                                        <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                      </div>
-                                    </div><!-- /.modal-content -->
-                                  </div><!-- /.modal-dialog -->
-                                </div><!-- /.modal -->
-                                     
-                            <!-- Ends photo with Modal -->
-
-                            <!--Begins photo with Modal -->                                
-                                <div class="col-md-2">
-                                    <a data-toggle="modal" data-target="#myModal"> 
-                                         <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                    </a>
-                                </div>
-
-                                <div class="modal fade" id="myModal">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                      </div>
-                                      <div class="modal-body">
-                                        <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                      </div>
-                                    </div><!-- /.modal-content -->
-                                  </div><!-- /.modal-dialog -->
-                                </div><!-- /.modal -->
-                                     
-                            <!-- Ends photo with Modal -->
-
-                            <!--Begins photo with Modal -->                                
-                                <div class="col-md-2">
-                                    <a data-toggle="modal" data-target="#myModal"> 
-                                         <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                    </a>
-                                </div>
-
-                                <div class="modal fade" id="myModal">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                      </div>
-                                      <div class="modal-body">
-                                        <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                      </div>
-                                    </div><!-- /.modal-content -->
-                                  </div><!-- /.modal-dialog -->
-                                </div><!-- /.modal -->
-                                     
-                             <!-- Ends photo with Modal -->
+                </div>
+                
+                <!-- ROW 1 -->
+                <div id="links">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2">   
+                                <a class="thumbnail" href="../../images/tetons.jpg" title="Tetons" data-gallery>
+                                    <img src="../../images/tetons.jpg" alt="Tetons">
+                                </a>
                             </div>
-                        </div>
-
-                        <br>
-
-                        <!-- BEGIN PHOTO ROW 3 -->
-
-                        <div class="container-fluid">
-                            <div class="row">
-                            <!--Begins photo with Modal -->                                
-                                <div class="col-md-2">
-                                    <a data-toggle="modal" data-target="#myModal"> 
-                                         <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                    </a>
-                                </div>
-
-                                <div class="modal fade" id="myModal">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                      </div>
-                                      <div class="modal-body">
-                                        <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                      </div>
-                                    </div><!-- /.modal-content -->
-                                  </div><!-- /.modal-dialog -->
-                                </div><!-- /.modal -->
-                                     
-                            <!-- Ends photo with Modal -->
-
-                            <!--Begins photo with Modal -->                                
-                                <div class="col-md-2">
-                                    <a data-toggle="modal" data-target="#myModal"> 
-                                         <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                    </a>
-                                </div>
-
-                                <div class="modal fade" id="myModal">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                      </div>
-                                      <div class="modal-body">
-                                        <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                      </div>
-                                    </div><!-- /.modal-content -->
-                                  </div><!-- /.modal-dialog -->
-                                </div><!-- /.modal -->
-                                     
-                            <!-- Ends photo with Modal -->
-
-                            <!--Begins photo with Modal -->                                
-                                <div class="col-md-2">
-                                    <a data-toggle="modal" data-target="#myModal"> 
-                                         <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                    </a>
-                                </div>
-
-                                <div class="modal fade" id="myModal">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                      </div>
-                                      <div class="modal-body">
-                                        <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                      </div>
-                                    </div><!-- /.modal-content -->
-                                  </div><!-- /.modal-dialog -->
-                                </div><!-- /.modal -->
-                                     
-                            <!-- Ends photo with Modal -->
-
-                            <!--Begins photo with Modal -->                                
-                                <div class="col-md-2">
-                                    <a data-toggle="modal" data-target="#myModal"> 
-                                         <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                    </a>
-                                </div>
-
-                                <div class="modal fade" id="myModal">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                      </div>
-                                      <div class="modal-body">
-                                        <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                      </div>
-                                    </div><!-- /.modal-content -->
-                                  </div><!-- /.modal-dialog -->
-                                </div><!-- /.modal -->
-                                     
-                            <!-- Ends photo with Modal -->
-
-                            <!--Begins photo with Modal -->                                
-                                <div class="col-md-2">
-                                    <a data-toggle="modal" data-target="#myModal"> 
-                                         <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                    </a>
-                                </div>
-
-                                <div class="modal fade" id="myModal">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                      </div>
-                                      <div class="modal-body">
-                                        <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                      </div>
-                                    </div><!-- /.modal-content -->
-                                  </div><!-- /.modal-dialog -->
-                                </div><!-- /.modal -->
-                                     
-                            <!-- Ends photo with Modal -->
-
-                            <!--Begins photo with Modal -->                                
-                                <div class="col-md-2">
-                                    <a data-toggle="modal" data-target="#myModal"> 
-                                         <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                    </a>
-                                </div>
-
-                                <div class="modal fade" id="myModal">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title">Grand Tetons From Hot Air Balloon</h4>
-                                      </div>
-                                      <div class="modal-body">
-                                        <img src="/images/tetons" class="img-responsive" alt="Responsive image">
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                      </div>
-                                    </div><!-- /.modal-content -->
-                                  </div><!-- /.modal-dialog -->
-                                </div><!-- /.modal -->
-                                     
-                            <!-- Ends photo with Modal -->
-
+                            <div class="col-md-2">   
+                                <a class="thumbnail" href="../../images/tetons.jpg" title="Tetons" data-gallery>
+                                    <img src="../../images/tetons.jpg" alt="Tetons">
+                                </a>
                             </div>
+                            <div class="col-md-2">   
+                                <a class="thumbnail" href="../../images/tetons.jpg" title="Tetons" data-gallery>
+                                    <img src="../../images/tetons.jpg" alt="Tetons">
+                                </a>
+                            </div>
+                            <div class="col-md-2">   
+                                <a class="thumbnail" href="../../images/tetons.jpg" title="Tetons" data-gallery>
+                                    <img src="../../images/tetons.jpg" alt="Tetons">
+                                </a>
+                            </div>                            
+                            <div class="col-md-2">   
+                                <a class="thumbnail" href="../../images/tetons.jpg" title="Tetons" data-gallery>
+                                    <img src="../../images/tetons.jpg" alt="Tetons">
+                                </a>
+                            </div>
+                            <div class="col-md-2">   
+                                <a class="thumbnail" href="../../images/tetons.jpg" title="Tetons" data-gallery>
+                                    <img src="../../images/tetons.jpg" alt="Tetons">
+                                </a>
+                            </div>                                                                    
                         </div>
+                    </div>
+                </div>                
 
-            </section>
+                <!-- ROW 2 -->
+                <div id="links">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2">   
+                                <a class="thumbnail" href="../../images/tetons.jpg" title="Tetons" data-gallery>
+                                    <img src="../../images/tetons.jpg" alt="Tetons">
+                                </a>
+                            </div>
+                            <div class="col-md-2">   
+                                <a class="thumbnail" href="../../images/tetons.jpg" title="Tetons" data-gallery>
+                                    <img src="../../images/tetons.jpg" alt="Tetons">
+                                </a>
+                            </div>
+                            <div class="col-md-2">   
+                                <a class="thumbnail" href="../../images/tetons.jpg" title="Tetons" data-gallery>
+                                    <img src="../../images/tetons.jpg" alt="Tetons">
+                                </a>
+                            </div>
+                            <div class="col-md-2">   
+                                <a class="thumbnail" href="../../images/tetons.jpg" title="Tetons" data-gallery>
+                                    <img src="../../images/tetons.jpg" alt="Tetons">
+                                </a>
+                            </div>                            
+                            <div class="col-md-2">   
+                                <a class="thumbnail" href="../../images/tetons.jpg" title="Tetons" data-gallery>
+                                    <img src="../../images/tetons.jpg" alt="Tetons">
+                                </a>
+                            </div>
+                            <div class="col-md-2">   
+                                <a class="thumbnail" href="../../images/tetons.jpg" title="Tetons" data-gallery>
+                                    <img src="../../images/tetons.jpg" alt="Tetons">
+                                </a>
+                            </div>                                                                    
+                        </div>
+                    </div>
+                </div>   
+
+
+            <!--JQuery-->
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <!-- Photo Gallery -->
+            <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>            
+        </body>
+    
+    </html>
+
 
  
  
@@ -607,10 +215,3 @@
         
         
         
-            <!--JQuery-->
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-            <!-- Latest compiled and minified JavaScript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>            
-        </body>
-    
-    </html>
